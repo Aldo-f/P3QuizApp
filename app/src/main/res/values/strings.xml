@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Emoji Quiz</string>
+    <string name="what_is_your_score">What is your score?</string>
+    <string name="restart">Restart</string>
+    <string name="name">name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="no_right_answers">You have no questions right&#8230; try again :)</string>
+</resources>

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.aldofieuw.android.emojiquiz.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- snow white
+        category: celebrity
+        http://emoji-quiz.net/en/answer-1/
+        -->
+        <LinearLayout
+            style="mainFullQuestion"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_bg_primarycolor"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--emoticons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp">
+                    <!-- <2 emoticons-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/q_white" />
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/q_snowflake" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--answers-->
+                <LinearLayout
+                    style="@style/mainAnswerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/startText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Which celebrity is this?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/celebrity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Snow White" />
+
+                            <RadioButton
+                                android:id="@+id/frozen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Frozen" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- apple
+        category: brand
+        http://emoji-quiz.net/en/answer-2/
+        -->
+        <LinearLayout
+            style="mainFullQuestion"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_bg_primarycolor"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--emoticons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp">
+                    <!-- >2 emoticons-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_apple" />
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_personalcomputer" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_mobilephone" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--answers-->
+                <LinearLayout
+                    style="@style/mainAnswerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/startText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Which brand is this?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="..."
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Burger king
+        Category: brand
+        http://emoji-quiz.net/en/answer-3
+        -->
+        <LinearLayout
+            style="mainFullQuestion"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_bg_primarycolor"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--emoticons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp">
+                    <!-- <2 emoticons-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/q_burger" />
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/q_crown" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--answers-->
+                <LinearLayout
+                    style="@style/mainAnswerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/startText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Which brand is this?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/burger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger" />
+
+                        <CheckBox
+                            android:id="@+id/lion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lion" />
+
+                        <CheckBox
+                            android:id="@+id/king"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="King" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Titanic
+        Category: movie
+        http://emoji-quiz.net/en/answer-7
+        -->
+        <LinearLayout
+            style="mainFullQuestion"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_bg_primarycolor"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--emoticons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_ship" />
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_icecream" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_fireworks" />
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_skull" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--answers-->
+                <LinearLayout
+                    style="@style/mainAnswerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/startText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Which movie is this?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/pi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The life of Pi" />
+
+                            <RadioButton
+                                android:id="@+id/titanic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Titanic" />
+
+                            <RadioButton
+                                android:id="@+id/ghost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ghost ship" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Winnie the pooh
+        Category: celebrity
+        http://emoji-quiz.net/en/answer-6
+        -->
+        <LinearLayout
+            style="mainFullQuestion"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_bg_primarycolor"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--emoticons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_bearface" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_television" />
+
+                        <ImageView
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/q_honeypot" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--answers-->
+                <LinearLayout
+                    style="@style/mainAnswerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/startText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Which celebrity is this?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/winnie"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="..."
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Calculate score
+                    -->
+        <LinearLayout
+            style="mainFullQuestion"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_bg_primarycolor"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--emoticons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameAvatar"
+                            style="@style/startText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name"
+                            android:textColor="@color/colorWhite" />
+
+                        <ImageView
+                            android:id="@+id/avatar"
+                            style="@style/mainEmoticon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/q_bearface" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--answers-->
+                <LinearLayout
+                    style="@style/mainAnswerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/scoreBtn"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="16dp"
+                            android:background="@color/colorWhite"
+                            android:onClick="score"
+                            android:text="@string/what_is_your_score"
+                            android:textAllCaps="false"
+                            android:textSize="24sp" />
+
+                        <Button
+                            android:id="@+id/startBtn"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="16dp"
+                            android:background="@color/colorWhite"
+                            android:onClick="restart"
+                            android:text="@string/restart"
+                            android:textAllCaps="false"
+                            android:textSize="24sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

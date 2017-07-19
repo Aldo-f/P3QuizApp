@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EmojiQuiz.iml" filepath="$PROJECT_DIR$/EmojiQuiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EmojiQuiz2.iml" filepath="$PROJECT_DIR$/EmojiQuiz2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P3QuizApp.iml" filepath="$PROJECT_DIR$/P3QuizApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P3QuizApp.iml" filepath="$PROJECT_DIR$/P3QuizApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

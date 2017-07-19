@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.aldofieuw.android.emojiquiz.StartActivity">
+
+    <TextView
+        android:id="@+id/avatars"
+        style="@style/startText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose emoticon" />
+
+    <LinearLayout
+        android:id="@+id/avatars1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/baby"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_baby" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/avatars2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/boy"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_boy" />
+
+        <ImageView
+            android:id="@+id/girl"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_girl" />
+
+        <ImageView
+            android:id="@+id/man"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_man" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/avatars3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/woman"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_woman" />
+
+        <ImageView
+            android:id="@+id/oldman"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_oldman" />
+
+        <ImageView
+            android:id="@+id/oldwoman"
+            style="@style/startImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseEmoticon"
+            android:src="@drawable/e_oldwoman" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/avatars4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/avaterName"
+            style="@style/startImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/e_baby" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/enter_your_name"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        style="@style/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="startGame"
+        android:text="Start Game" />
+</LinearLayout>
